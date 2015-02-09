@@ -66,6 +66,7 @@ body {
 #first_person_body {
   position: absolute;
   top: 0;
+  z-index: 1;
 }
 #first_person_leg1 {
   position: absolute;
@@ -96,6 +97,14 @@ body {
   -o-animation: move_hand 300ms linear 600ms 4;
   -ms-animation: move_hand 300ms linear 600ms 4;
   animation: move_hand 300ms linear 600ms 4;
+  z-index: 2;
+}
+#first_person.female img {
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 #second_person {
   position: absolute;
@@ -147,6 +156,13 @@ body {
   -ms-animation: move_hand 300ms linear 600ms 6;
   animation: move_hand 300ms linear 600ms 6;
   z-index: 2;
+}
+#second_person.male img {
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 #ball_wrapper {
   width: 602px;

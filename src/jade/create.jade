@@ -5,39 +5,43 @@ html(lang='en')
     title Create your Valentine's card
     style(type='text/css').
       form {
-      text-align: center;
+        text-align: center;
       }
-      form fieldset {
-      display: inline-block;
-      width: 40%;
+      form fieldset.person {
+        display: inline-block;
+        width: 40%;
       }
       button {
-      display: block;
+        display: block;
       }
   body
     form(method='GET', action='index.html')
-      fieldset
+      fieldset.person
         legend
           | You
         p
           label Sex:
-          input#firstSex(type='radio', name='firstSex', value='female', checked='checked')
-          input#firstSex(type='radio', name='firstSex', value='male')
+          input#firstSex(type='radio', name='fpSex', value='female', checked='checked')
+          input#firstSex(type='radio', name='fpSex', value='male')
         p
           label Hair color:
-          input#firstHair(type='radio', name='firstHair', value='black', checked='checked')
-          input#firstHair(type='radio', name='firstHair', value='red')
-          input#firstHair(type='radio', name='firstHair', value='white')
-      fieldset
+          input#firstHair(type='radio', name='fpHair', value='black', checked='checked')
+          input#firstHair(type='radio', name='fpHair', value='red')
+          input#firstHair(type='radio', name='fpHair', value='white')
+      fieldset.person
         legend
           | Your partner
         p
           label Sex:
-          input#secondSex(type='radio', name='secondSex', value='female', checked='checked')
-          input#secondSex(type='radio', name='secondSex', value='male')
+          input#secondSex(type='radio', name='spSex', value='female', checked='checked')
+          input#secondSex(type='radio', name='spSex', value='male')
         p
           label Hair color:
-          input#secondHair(type='radio', name='secondHair', value='black', checked='checked')
-          input#secondHair(type='radio', name='secondHair', value='red')
-          input#secondHair(type='radio', name='secondHair', value='white')
+          input#secondHair(type='radio', name='spHair', value='black', checked='checked')
+          input#secondHair(type='radio', name='spHair', value='red')
+          input#secondHair(type='radio', name='spHair', value='white')
+      //- fieldset
+      //-   p
+      //-     label Color:
+      //-     input(type='color',name='bgColor')
       button Create

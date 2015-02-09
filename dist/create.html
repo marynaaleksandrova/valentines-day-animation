@@ -1,10 +1,10 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Create your Valentine's card</title><style type="text/css">form {
-text-align: center;
+  text-align: center;
 }
-form fieldset {
-display: inline-block;
-width: 40%;
+form fieldset.person {
+  display: inline-block;
+  width: 40%;
 }
 button {
-display: block;
-}</style></head><body><form method="GET" action="index.html"><fieldset><legend>You</legend><p><label>Sex:</label><input id="firstSex" type="radio" name="firstSex" value="female" checked="checked"><input id="firstSex" type="radio" name="firstSex" value="male"></p><p><label>Hair color:</label><input id="firstHair" type="radio" name="firstHair" value="black" checked="checked"><input id="firstHair" type="radio" name="firstHair" value="red"><input id="firstHair" type="radio" name="firstHair" value="white"></p></fieldset><fieldset><legend>Your partner</legend><p><label>Sex:</label><input id="secondSex" type="radio" name="secondSex" value="female" checked="checked"><input id="secondSex" type="radio" name="secondSex" value="male"></p><p><label>Hair color:</label><input id="secondHair" type="radio" name="secondHair" value="black" checked="checked"><input id="secondHair" type="radio" name="secondHair" value="red"><input id="secondHair" type="radio" name="secondHair" value="white"></p></fieldset><button>Create</button></form></body></html>
+  display: block;
+}</style></head><body><form method="GET" action="index.html"><fieldset class="person"><legend>You</legend><p><label>Sex:</label><input id="firstSex" type="radio" name="fpSex" value="female" checked="checked"><input id="firstSex" type="radio" name="fpSex" value="male"></p><p><label>Hair color:</label><input id="firstHair" type="radio" name="fpHair" value="black" checked="checked"><input id="firstHair" type="radio" name="fpHair" value="red"><input id="firstHair" type="radio" name="fpHair" value="white"></p></fieldset><fieldset class="person"><legend>Your partner</legend><p><label>Sex:</label><input id="secondSex" type="radio" name="spSex" value="female" checked="checked"><input id="secondSex" type="radio" name="spSex" value="male"></p><p><label>Hair color:</label><input id="secondHair" type="radio" name="spHair" value="black" checked="checked"><input id="secondHair" type="radio" name="spHair" value="red"><input id="secondHair" type="radio" name="spHair" value="white"></p></fieldset><button>Create</button></form></body></html>

@@ -33,9 +33,11 @@ body {
   opacity:0;
   animation: move_first_person 3000ms linear 1;
 }
+
 #first_person_body{
   position:absolute;
   top:0;
+  z-index:1;
 }
 #first_person_leg1{
   position: absolute;
@@ -54,7 +56,13 @@ body {
   top: 35px;
   left: 14px;
   animation: move_hand 300ms linear 600ms 4;
+  z-index:2;
 }
+
+#first_person.female img{
+  transform: scaleX(-1);
+}
+
 #second_person{
   position:absolute;
   bottom:0;
@@ -87,6 +95,9 @@ body {
   right: 14px;
   animation: move_hand 300ms linear 600ms 6;
   z-index:2;
+}
+#second_person.male img{
+  transform: scaleX(-1);
 }
 #ball_wrapper {
   width:602px;
