@@ -1,0 +1,43 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title Create your Valentine's card
+    style(type='text/css').
+      form {
+      text-align: center;
+      }
+      form fieldset {
+      display: inline-block;
+      width: 40%;
+      }
+      button {
+      display: block;
+      }
+  body
+    form(method='GET', action='index.html')
+      fieldset
+        legend
+          | You
+        p
+          label Sex:
+          input#firstSex(type='radio', name='firstSex', value='female', checked='checked')
+          input#firstSex(type='radio', name='firstSex', value='male')
+        p
+          label Hair color:
+          input#firstHair(type='radio', name='firstHair', value='black', checked='checked')
+          input#firstHair(type='radio', name='firstHair', value='red')
+          input#firstHair(type='radio', name='firstHair', value='white')
+      fieldset
+        legend
+          | Your partner
+        p
+          label Sex:
+          input#secondSex(type='radio', name='secondSex', value='female', checked='checked')
+          input#secondSex(type='radio', name='secondSex', value='male')
+        p
+          label Hair color:
+          input#secondHair(type='radio', name='secondHair', value='black', checked='checked')
+          input#secondHair(type='radio', name='secondHair', value='red')
+          input#secondHair(type='radio', name='secondHair', value='white')
+      button Create
