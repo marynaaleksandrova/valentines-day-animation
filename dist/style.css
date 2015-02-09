@@ -48,7 +48,7 @@ body {
   bottom: 0;
   height: 81px;
 }
-#boy {
+#first_person {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -57,11 +57,11 @@ body {
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
-  -webkit-animation: move_boy 3000ms linear 1;
-  -moz-animation: move_boy 3000ms linear 1;
-  -o-animation: move_boy 3000ms linear 1;
-  -ms-animation: move_boy 3000ms linear 1;
-  animation: move_boy 3000ms linear 1;
+  -webkit-animation: move_first_person 3000ms linear 1;
+  -moz-animation: move_first_person 3000ms linear 1;
+  -o-animation: move_first_person 3000ms linear 1;
+  -ms-animation: move_first_person 3000ms linear 1;
+  animation: move_first_person 3000ms linear 1;
 }
 #boy_body {
   position: absolute;
@@ -97,7 +97,7 @@ body {
   -ms-animation: move_hand 300ms linear 600ms 4;
   animation: move_hand 300ms linear 600ms 4;
 }
-#girl {
+#second_person {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -106,11 +106,11 @@ body {
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
-  -webkit-animation: move_girl 3000ms linear 1;
-  -moz-animation: move_girl 3000ms linear 1;
-  -o-animation: move_girl 3000ms linear 1;
-  -ms-animation: move_girl 3000ms linear 1;
-  animation: move_girl 3000ms linear 1;
+  -webkit-animation: move_second_person 3000ms linear 1;
+  -moz-animation: move_second_person 3000ms linear 1;
+  -o-animation: move_second_person 3000ms linear 1;
+  -ms-animation: move_second_person 3000ms linear 1;
+  animation: move_second_person 3000ms linear 1;
 }
 #girl_body {
   position: absolute;
@@ -155,34 +155,34 @@ body {
   bottom: 0;
   right: 199px;
 }
-#girl_ball,
-#boy_ball {
+#second_person_ball,
+#first_person_ball {
   width: 12px;
   height: 12px;
   -webkit-border-radius: 6px;
   border-radius: 6px;
 }
-#girl_ball {
+#second_person_ball {
   background-color: #f1f;
   position: absolute;
   right: 115px;
   bottom: 90px;
-  -webkit-animation: move_girl_ball 7000ms ease-in 3000ms 1;
-  -moz-animation: move_girl_ball 7000ms ease-in 3000ms 1;
-  -o-animation: move_girl_ball 7000ms ease-in 3000ms 1;
-  -ms-animation: move_girl_ball 7000ms ease-in 3000ms 1;
-  animation: move_girl_ball 7000ms ease-in 3000ms 1;
+  -webkit-animation: move_second_person_ball 7000ms ease-in 3000ms 1;
+  -moz-animation: move_second_person_ball 7000ms ease-in 3000ms 1;
+  -o-animation: move_second_person_ball 7000ms ease-in 3000ms 1;
+  -ms-animation: move_second_person_ball 7000ms ease-in 3000ms 1;
+  animation: move_second_person_ball 7000ms ease-in 3000ms 1;
 }
-#boy_ball {
+#first_person_ball {
   background-color: #42bfbf;
   position: absolute;
   left: 22px;
   bottom: 103px;
-  -webkit-animation: move_boy_ball 7000ms ease-in 3000ms 1;
-  -moz-animation: move_boy_ball 7000ms ease-in 3000ms 1;
-  -o-animation: move_boy_ball 7000ms ease-in 3000ms 1;
-  -ms-animation: move_boy_ball 7000ms ease-in 3000ms 1;
-  animation: move_boy_ball 7000ms ease-in 3000ms 1;
+  -webkit-animation: move_first_person_ball 7000ms ease-in 3000ms 1;
+  -moz-animation: move_first_person_ball 7000ms ease-in 3000ms 1;
+  -o-animation: move_first_person_ball 7000ms ease-in 3000ms 1;
+  -ms-animation: move_first_person_ball 7000ms ease-in 3000ms 1;
+  animation: move_first_person_ball 7000ms ease-in 3000ms 1;
 }
 #valentine_ball {
   background-color: #ff02a0;
@@ -297,7 +297,7 @@ img#fire {
 /*-----Move hand-----*/
 /*-----Move people-----*/
 /*-----Final-----*/
-@-moz-keyframes move_girl_ball {
+@-moz-keyframes move_second_person_ball {
   0% {
     right: 115px;
     bottom: 90px;
@@ -374,7 +374,7 @@ img#fire {
     bottom: 268px;
   }
 }
-@-webkit-keyframes move_girl_ball {
+@-webkit-keyframes move_second_person_ball {
   0% {
     right: 115px;
     bottom: 90px;
@@ -451,7 +451,7 @@ img#fire {
     bottom: 268px;
   }
 }
-@-o-keyframes move_girl_ball {
+@-o-keyframes move_second_person_ball {
   0% {
     right: 115px;
     bottom: 90px;
@@ -528,7 +528,7 @@ img#fire {
     bottom: 268px;
   }
 }
-@keyframes move_girl_ball {
+@keyframes move_second_person_ball {
   0% {
     right: 115px;
     bottom: 90px;
@@ -605,7 +605,7 @@ img#fire {
     bottom: 268px;
   }
 }
-@-moz-keyframes move_boy_ball {
+@-moz-keyframes move_first_person_ball {
   0% {
     left: 22px;
     bottom: 103px;
@@ -779,7 +779,7 @@ img#fire {
     bottom: 267px;
   }
 }
-@-webkit-keyframes move_boy_ball {
+@-webkit-keyframes move_first_person_ball {
   0% {
     left: 22px;
     bottom: 103px;
@@ -953,7 +953,7 @@ img#fire {
     bottom: 267px;
   }
 }
-@-o-keyframes move_boy_ball {
+@-o-keyframes move_first_person_ball {
   0% {
     left: 22px;
     bottom: 103px;
@@ -1127,7 +1127,7 @@ img#fire {
     bottom: 267px;
   }
 }
-@keyframes move_boy_ball {
+@keyframes move_first_person_ball {
   0% {
     left: 22px;
     bottom: 103px;
@@ -4713,7 +4713,7 @@ img#fire {
     transform-origin: 50% 10%;
   }
 }
-@-moz-keyframes move_boy {
+@-moz-keyframes move_first_person {
   0% {
     left: 0;
     bottom: 0;
@@ -4791,7 +4791,7 @@ img#fire {
     transform: scaleY(0.1);
   }
 }
-@-webkit-keyframes move_boy {
+@-webkit-keyframes move_first_person {
   0% {
     left: 0;
     bottom: 0;
@@ -4869,7 +4869,7 @@ img#fire {
     transform: scaleY(0.1);
   }
 }
-@-o-keyframes move_boy {
+@-o-keyframes move_first_person {
   0% {
     left: 0;
     bottom: 0;
@@ -4947,7 +4947,7 @@ img#fire {
     transform: scaleY(0.1);
   }
 }
-@keyframes move_boy {
+@keyframes move_first_person {
   0% {
     left: 0;
     bottom: 0;
@@ -5025,7 +5025,7 @@ img#fire {
     transform: scaleY(0.1);
   }
 }
-@-moz-keyframes move_girl {
+@-moz-keyframes move_second_person {
   0% {
     right: 0;
     bottom: 0;
@@ -5096,7 +5096,7 @@ img#fire {
     transform: scaleY(0.1);
   }
 }
-@-webkit-keyframes move_girl {
+@-webkit-keyframes move_second_person {
   0% {
     right: 0;
     bottom: 0;
@@ -5167,7 +5167,7 @@ img#fire {
     transform: scaleY(0.1);
   }
 }
-@-o-keyframes move_girl {
+@-o-keyframes move_second_person {
   0% {
     right: 0;
     bottom: 0;
@@ -5238,7 +5238,7 @@ img#fire {
     transform: scaleY(0.1);
   }
 }
-@keyframes move_girl {
+@keyframes move_second_person {
   0% {
     right: 0;
     bottom: 0;

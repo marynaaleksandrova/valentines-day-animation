@@ -24,14 +24,14 @@ body {
   bottom:0;
   height:81px;
 }
-#boy{
+#first_person{
   position:absolute;
   bottom:0;
   left:0;
   width:38px;
   height:81px;
   opacity:0;
-  animation: move_boy 3000ms linear 1;
+  animation: move_first_person 3000ms linear 1;
 }
 #boy_body{
   position:absolute;
@@ -55,14 +55,14 @@ body {
   left: 14px;
   animation: move_hand 300ms linear 600ms 4;
 }
-#girl{
+#second_person{
   position:absolute;
   bottom:0;
   right:0;
   width:35px;
   height:78px;
   opacity:0;
-  animation: move_girl 3000ms linear 1;
+  animation: move_second_person 3000ms linear 1;
 }
 #girl_body{
   position:absolute;
@@ -95,24 +95,24 @@ body {
   bottom:0;
   right:199px;
 }
-#girl_ball , #boy_ball{
+#second_person_ball , #first_person_ball{
   width:12px;
   height:12px;
   border-radius: 6px;
 }
-#girl_ball {
+#second_person_ball {
   background-color:#FF11FF;
   position: absolute;
   right: 115px;
   bottom: 90px;
-  animation: move_girl_ball 7000ms ease-in 3000ms 1;
+  animation: move_second_person_ball 7000ms ease-in 3000ms 1;
 }
-#boy_ball {
+#first_person_ball {
   background-color:#42BFBF;
   position: absolute;
   left: 22px;
   bottom: 103px;
-  animation: move_boy_ball 7000ms ease-in 3000ms 1;
+  animation: move_first_person_ball 7000ms ease-in 3000ms 1;
 }
 #valentine_ball {
   background-color:#FF02A0;
@@ -183,7 +183,7 @@ img#fire{
 
 /*-----Animations-----*/
 /*-----Move girl ball-----*/
-@keyframes move_girl_ball {
+@keyframes move_second_person_ball {
   0% {
     right:115px;
     bottom:90px;
@@ -226,7 +226,7 @@ img#fire{
 }
 
 /*-----Move boy ball-----*/
-@keyframes move_boy_ball {
+@keyframes move_first_person_ball {
   0% {
     left:22px;
     bottom:103px;
@@ -542,12 +542,18 @@ img#fire{
     bottom:0;
     left:117px;
   }
-  80%{bottom:0;
-    left:117px;}
-  95%{bottom:0;
-    left:199px;}
-  100%{bottom:0;
-    left:199px;}
+  80%{
+    bottom:0;
+    left:117px;
+  }
+  95%{
+    bottom:0;
+    left:199px;
+  }
+  100%{
+    bottom:0;
+    left:199px;
+  }
 }
 
 /*-----Move legs-----*/
@@ -588,66 +594,78 @@ img#fire{
     transform: rotate(-20deg);
     transform-origin:50% 10%;
   }
-  to{transform: rotate(40deg);
+  to{
+    transform: rotate(40deg);
     transform-origin:50% 10%;
     transform: rotate(40deg);
     transform-origin:50% 10%;}
 }
 
 /*-----Move people-----*/
-@keyframes move_boy {
+@keyframes move_first_person {
   0% {
     left:0;
     bottom:0;
   }
-  10%{left:0;
+  10%{
+    left:0;
     bottom:0;
     opacity:0;}
-  20%{left:0;
+  20%{
+    left:0;
     bottom:0;
     opacity:1;}
-  60%{left:205px;
+  60%{
+    left:205px;
     bottom:0;
     opacity:1;}
-  80%{left:205px;
+  80%{
+    left:205px;
     bottom:0;
     opacity:1;
     transform: scaleY(1);
     transform: scaleY(1);}
-  90%{left:205px;
+  90%{
+    left:205px;
     bottom:20px;
     opacity:1;
     transform: scaleY(1.2);
     transform: scaleY(1.2);}
-  100%{left:205px;
+  100%{
+    left:205px;
     bottom:50px;
     opacity:1;
     transform: scaleY(0.1);
     transform: scaleY(0.1);}
 }
 
-@keyframes move_girl {
+@keyframes move_second_person {
   0% {
     right:0;
     bottom:0;
   }
-  10%{right:0;
+  10%{
+    right:0;
     bottom:0;
     opacity:0;}
-  20%{right:0;
+  20%{
+    right:0;
     bottom:0;
     opacity:1;}
-  80%{right:302px;
+  80%{
+    right:302px;
     bottom:0;
     opacity:1;
     transform: scaleY(1);
     transform: scaleY(1);}
-  90%{right:302px;
+  90%{
+    right:302px;
     bottom:20px;
     opacity:1;
     transform: scaleY(1.2);
     transform: scaleY(1.2);}
-  100%{right:302px;
+  100%{
+    right:302px;
     bottom:50px;
     opacity:1;
     transform: scaleY(0.1);
@@ -668,7 +686,8 @@ img#fire{
     transform: scale(1);
     transform: scale(1);
   }
-  100%{top:-100px;
+  100%{
+    top:-100px;
     right:0;
     transform: scale(1);
     transform: scale(1);}
