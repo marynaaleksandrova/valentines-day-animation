@@ -4181,21 +4181,6 @@ img#fire {
 }
 @-moz-keyframes move_leg1 {
   from {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    -webkit-transform-origin: 50% 10%;
-    -moz-transform-origin: 50% 10%;
-    -o-transform-origin: 50% 10%;
-    -ms-transform-origin: 50% 10%;
-    transform-origin: 50% 10%;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
     -webkit-transform-origin: 50% 10%;
     -moz-transform-origin: 50% 10%;
     -o-transform-origin: 50% 10%;
@@ -4203,16 +4188,6 @@ img#fire {
     transform-origin: 50% 10%;
   }
   to {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    -webkit-transform-origin: 50% 10%;
-    -moz-transform-origin: 50% 10%;
-    -o-transform-origin: 50% 10%;
-    -ms-transform-origin: 50% 10%;
-    transform-origin: 50% 10%;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
@@ -4227,21 +4202,6 @@ img#fire {
 }
 @-webkit-keyframes move_leg1 {
   from {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    -webkit-transform-origin: 50% 10%;
-    -moz-transform-origin: 50% 10%;
-    -o-transform-origin: 50% 10%;
-    -ms-transform-origin: 50% 10%;
-    transform-origin: 50% 10%;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
     -webkit-transform-origin: 50% 10%;
     -moz-transform-origin: 50% 10%;
     -o-transform-origin: 50% 10%;
@@ -4249,16 +4209,6 @@ img#fire {
     transform-origin: 50% 10%;
   }
   to {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    -webkit-transform-origin: 50% 10%;
-    -moz-transform-origin: 50% 10%;
-    -o-transform-origin: 50% 10%;
-    -ms-transform-origin: 50% 10%;
-    transform-origin: 50% 10%;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
@@ -4273,21 +4223,6 @@ img#fire {
 }
 @-o-keyframes move_leg1 {
   from {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    -webkit-transform-origin: 50% 10%;
-    -moz-transform-origin: 50% 10%;
-    -o-transform-origin: 50% 10%;
-    -ms-transform-origin: 50% 10%;
-    transform-origin: 50% 10%;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
     -webkit-transform-origin: 50% 10%;
     -moz-transform-origin: 50% 10%;
     -o-transform-origin: 50% 10%;
@@ -4295,16 +4230,6 @@ img#fire {
     transform-origin: 50% 10%;
   }
   to {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    -webkit-transform-origin: 50% 10%;
-    -moz-transform-origin: 50% 10%;
-    -o-transform-origin: 50% 10%;
-    -ms-transform-origin: 50% 10%;
-    transform-origin: 50% 10%;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
@@ -4319,21 +4244,6 @@ img#fire {
 }
 @keyframes move_leg1 {
   from {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    -webkit-transform-origin: 50% 10%;
-    -moz-transform-origin: 50% 10%;
-    -o-transform-origin: 50% 10%;
-    -ms-transform-origin: 50% 10%;
-    transform-origin: 50% 10%;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
     -webkit-transform-origin: 50% 10%;
     -moz-transform-origin: 50% 10%;
     -o-transform-origin: 50% 10%;
@@ -4341,16 +4251,6 @@ img#fire {
     transform-origin: 50% 10%;
   }
   to {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    -webkit-transform-origin: 50% 10%;
-    -moz-transform-origin: 50% 10%;
-    -o-transform-origin: 50% 10%;
-    -ms-transform-origin: 50% 10%;
-    transform-origin: 50% 10%;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
@@ -4375,28 +4275,8 @@ img#fire {
     -o-transform-origin: 50% 10%;
     -ms-transform-origin: 50% 10%;
     transform-origin: 50% 10%;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    -webkit-transform-origin: 50% 10%;
-    -moz-transform-origin: 50% 10%;
-    -o-transform-origin: 50% 10%;
-    -ms-transform-origin: 50% 10%;
-    transform-origin: 50% 10%;
   }
   to {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    -webkit-transform-origin: 50% 10%;
-    -moz-transform-origin: 50% 10%;
-    -o-transform-origin: 50% 10%;
-    -ms-transform-origin: 50% 10%;
-    transform-origin: 50% 10%;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
@@ -4421,28 +4301,8 @@ img#fire {
     -o-transform-origin: 50% 10%;
     -ms-transform-origin: 50% 10%;
     transform-origin: 50% 10%;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    -webkit-transform-origin: 50% 10%;
-    -moz-transform-origin: 50% 10%;
-    -o-transform-origin: 50% 10%;
-    -ms-transform-origin: 50% 10%;
-    transform-origin: 50% 10%;
   }
   to {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    -webkit-transform-origin: 50% 10%;
-    -moz-transform-origin: 50% 10%;
-    -o-transform-origin: 50% 10%;
-    -ms-transform-origin: 50% 10%;
-    transform-origin: 50% 10%;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
@@ -4467,28 +4327,8 @@ img#fire {
     -o-transform-origin: 50% 10%;
     -ms-transform-origin: 50% 10%;
     transform-origin: 50% 10%;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    -webkit-transform-origin: 50% 10%;
-    -moz-transform-origin: 50% 10%;
-    -o-transform-origin: 50% 10%;
-    -ms-transform-origin: 50% 10%;
-    transform-origin: 50% 10%;
   }
   to {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    -webkit-transform-origin: 50% 10%;
-    -moz-transform-origin: 50% 10%;
-    -o-transform-origin: 50% 10%;
-    -ms-transform-origin: 50% 10%;
-    transform-origin: 50% 10%;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
@@ -4513,28 +4353,8 @@ img#fire {
     -o-transform-origin: 50% 10%;
     -ms-transform-origin: 50% 10%;
     transform-origin: 50% 10%;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    -webkit-transform-origin: 50% 10%;
-    -moz-transform-origin: 50% 10%;
-    -o-transform-origin: 50% 10%;
-    -ms-transform-origin: 50% 10%;
-    transform-origin: 50% 10%;
   }
   to {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    -webkit-transform-origin: 50% 10%;
-    -moz-transform-origin: 50% 10%;
-    -o-transform-origin: 50% 10%;
-    -ms-transform-origin: 50% 10%;
-    transform-origin: 50% 10%;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
@@ -4559,28 +4379,8 @@ img#fire {
     -o-transform-origin: 50% 10%;
     -ms-transform-origin: 50% 10%;
     transform-origin: 50% 10%;
-    -webkit-transform: rotate(-20deg);
-    -moz-transform: rotate(-20deg);
-    -o-transform: rotate(-20deg);
-    -ms-transform: rotate(-20deg);
-    transform: rotate(-20deg);
-    -webkit-transform-origin: 50% 10%;
-    -moz-transform-origin: 50% 10%;
-    -o-transform-origin: 50% 10%;
-    -ms-transform-origin: 50% 10%;
-    transform-origin: 50% 10%;
   }
   to {
-    -webkit-transform: rotate(40deg);
-    -moz-transform: rotate(40deg);
-    -o-transform: rotate(40deg);
-    -ms-transform: rotate(40deg);
-    transform: rotate(40deg);
-    -webkit-transform-origin: 50% 10%;
-    -moz-transform-origin: 50% 10%;
-    -o-transform-origin: 50% 10%;
-    -ms-transform-origin: 50% 10%;
-    transform-origin: 50% 10%;
     -webkit-transform: rotate(40deg);
     -moz-transform: rotate(40deg);
     -o-transform: rotate(40deg);
@@ -4605,28 +4405,8 @@ img#fire {
     -o-transform-origin: 50% 10%;
     -ms-transform-origin: 50% 10%;
     transform-origin: 50% 10%;
-    -webkit-transform: rotate(-20deg);
-    -moz-transform: rotate(-20deg);
-    -o-transform: rotate(-20deg);
-    -ms-transform: rotate(-20deg);
-    transform: rotate(-20deg);
-    -webkit-transform-origin: 50% 10%;
-    -moz-transform-origin: 50% 10%;
-    -o-transform-origin: 50% 10%;
-    -ms-transform-origin: 50% 10%;
-    transform-origin: 50% 10%;
   }
   to {
-    -webkit-transform: rotate(40deg);
-    -moz-transform: rotate(40deg);
-    -o-transform: rotate(40deg);
-    -ms-transform: rotate(40deg);
-    transform: rotate(40deg);
-    -webkit-transform-origin: 50% 10%;
-    -moz-transform-origin: 50% 10%;
-    -o-transform-origin: 50% 10%;
-    -ms-transform-origin: 50% 10%;
-    transform-origin: 50% 10%;
     -webkit-transform: rotate(40deg);
     -moz-transform: rotate(40deg);
     -o-transform: rotate(40deg);
@@ -4651,28 +4431,8 @@ img#fire {
     -o-transform-origin: 50% 10%;
     -ms-transform-origin: 50% 10%;
     transform-origin: 50% 10%;
-    -webkit-transform: rotate(-20deg);
-    -moz-transform: rotate(-20deg);
-    -o-transform: rotate(-20deg);
-    -ms-transform: rotate(-20deg);
-    transform: rotate(-20deg);
-    -webkit-transform-origin: 50% 10%;
-    -moz-transform-origin: 50% 10%;
-    -o-transform-origin: 50% 10%;
-    -ms-transform-origin: 50% 10%;
-    transform-origin: 50% 10%;
   }
   to {
-    -webkit-transform: rotate(40deg);
-    -moz-transform: rotate(40deg);
-    -o-transform: rotate(40deg);
-    -ms-transform: rotate(40deg);
-    transform: rotate(40deg);
-    -webkit-transform-origin: 50% 10%;
-    -moz-transform-origin: 50% 10%;
-    -o-transform-origin: 50% 10%;
-    -ms-transform-origin: 50% 10%;
-    transform-origin: 50% 10%;
     -webkit-transform: rotate(40deg);
     -moz-transform: rotate(40deg);
     -o-transform: rotate(40deg);
@@ -4697,28 +4457,8 @@ img#fire {
     -o-transform-origin: 50% 10%;
     -ms-transform-origin: 50% 10%;
     transform-origin: 50% 10%;
-    -webkit-transform: rotate(-20deg);
-    -moz-transform: rotate(-20deg);
-    -o-transform: rotate(-20deg);
-    -ms-transform: rotate(-20deg);
-    transform: rotate(-20deg);
-    -webkit-transform-origin: 50% 10%;
-    -moz-transform-origin: 50% 10%;
-    -o-transform-origin: 50% 10%;
-    -ms-transform-origin: 50% 10%;
-    transform-origin: 50% 10%;
   }
   to {
-    -webkit-transform: rotate(40deg);
-    -moz-transform: rotate(40deg);
-    -o-transform: rotate(40deg);
-    -ms-transform: rotate(40deg);
-    transform: rotate(40deg);
-    -webkit-transform-origin: 50% 10%;
-    -moz-transform-origin: 50% 10%;
-    -o-transform-origin: 50% 10%;
-    -ms-transform-origin: 50% 10%;
-    transform-origin: 50% 10%;
     -webkit-transform: rotate(40deg);
     -moz-transform: rotate(40deg);
     -o-transform: rotate(40deg);
