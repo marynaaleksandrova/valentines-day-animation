@@ -37,19 +37,19 @@ body {
   position:absolute;
   top:0;
 }
-#boy_leg1{
+#first_person_leg1{
   position: absolute;
   bottom:0;
   left: 16px;
   animation: move_leg1 300ms linear 600ms 4;
 }
-#boy_leg2{
+#first_person_leg2{
   position: absolute;
   bottom:0;
   left: 16px;
   animation: move_leg2 300ms linear 600ms 4;
 }
-#boy_hand{
+#first_person_hand{
   position: absolute;
   top: 35px;
   left: 14px;
@@ -67,24 +67,26 @@ body {
 #second_person_body{
   position:absolute;
   top:0;
+  z-index:1;
 }
-#girl_leg1{
+#second_person_leg1{
   position: absolute;
   bottom:0;
   right: 16px;
   animation: move_leg1 300ms linear 600ms 6;
 }
-#girl_leg2{
+#second_person_leg2{
   position: absolute;
   bottom:0;
   right: 16px;
   animation: move_leg2 300ms linear 600ms 6;
 }
-#girl_hand{
+#second_person_hand{
   position: absolute;
   top: 35px;
   right: 14px;
   animation: move_hand 300ms linear 600ms 6;
+  z-index:2;
 }
 #ball_wrapper {
   width:602px;
