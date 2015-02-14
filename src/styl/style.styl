@@ -1,5 +1,88 @@
 @import 'nib'
 
+#wrapper {
+  display: none;
+}
+
+html.loading .loaded_controls {
+  display: none;
+}
+html.loaded {
+  & #wrapper {
+    display: block;
+  }
+  & .loading_controls {
+    display: none;
+  }
+}
+.loading_controls{
+  position: fixed;
+  width: 500px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -250px;
+  text-align: center;
+  font-family: 'Helvetica Neue', Helvetica, 'Calibri', sans-serif;
+  font-size: 25px;
+  color: rgb(255, 170, 244);
+  font-weight: 100;
+}
+
+#start-animation {
+  font-size: 1em;
+  display: block;
+  margin: 0 auto;
+  background-color: #ff00df;
+  color: #fff;
+  padding: 0.4em 0.8em 0.3em;
+  text-decoration: none;
+  font-family: Helvetica, Colibri, sans-serif;
+  font-weight: 200;
+  border-radius: 3px;
+  border: 1px solid #8e027c;
+  transition: background-color 300ms;
+}
+#start-animation:hover {
+  background-color: #e200c6;
+  cursor: pointer;
+}
+.loading_controls span{
+  font-size:12px;
+}
+
+#btns {
+  position:fixed;
+  top:7px;
+  left:10px;
+}
+.btn {
+  background-color: #FF00DF;
+  color: white;
+  padding: 0.3em 0.8em;
+  text-decoration: none;
+  font-family: Helvetica, Colibri, sans-serif;
+  font-weight: 200;
+  border-radius: 3px;
+  border: 1px solid rgb(142, 2, 124);
+  transition: background-color 300ms;
+  margin: 0 0.5em;
+}
+.btn:hover {
+  background-color: #E200C6;
+  cursor: pointer;
+}
+
+#social{
+  position:fixed;
+  top:7px;
+  right:10px;
+}
+
+#svgs svg {
+  display: none;
+}
+
 body {
   height:100%;
   background: #940268; /* Old browsers */
@@ -31,7 +114,9 @@ body {
   width:38px;
   height:81px;
   opacity:0;
-  animation: move_first_person 3000ms linear 1;
+  &.started {
+    animation: move_first_person 3000ms linear 1;
+  }
 }
 
 #first_person_body{
@@ -43,25 +128,29 @@ body {
   position: absolute;
   bottom:0;
   left: 16px;
-  animation: move_leg1 300ms linear 600ms 4;
+  &.started {
+    animation: move_leg1 300ms linear 600ms 4;
+  }
+
 }
 #first_person_leg2{
   position: absolute;
   bottom:0;
   left: 16px;
-  animation: move_leg2 300ms linear 600ms 4;
+  &.started {
+    animation: move_leg2 300ms linear 600ms 4;
+  }
 }
 #first_person_hand{
   position: absolute;
   top: 35px;
   left: 14px;
-  animation: move_hand 300ms linear 600ms 4;
   z-index:2;
+  &.started {
+    animation: move_hand 300ms linear 600ms 4;
+  }
 }
 
-#first_person.female img{
-  transform: scaleX(-1);
-}
 
 #second_person{
   position:absolute;
@@ -70,7 +159,9 @@ body {
   width:35px;
   height:78px;
   opacity:0;
-  animation: move_second_person 3000ms linear 1;
+  &.started {
+    animation: move_second_person 3000ms linear 1;
+  }
 }
 #second_person_body{
   position:absolute;
@@ -81,24 +172,28 @@ body {
   position: absolute;
   bottom:0;
   right: 16px;
-  animation: move_leg1 300ms linear 600ms 6;
+  &.started {
+    animation: move_leg1 300ms linear 600ms 6;
+  }
 }
 #second_person_leg2{
   position: absolute;
   bottom:0;
   right: 16px;
-  animation: move_leg2 300ms linear 600ms 6;
+  &.started {
+    animation: move_leg2 300ms linear 600ms 6;
+  }
 }
 #second_person_hand{
   position: absolute;
   top: 35px;
   right: 14px;
-  animation: move_hand 300ms linear 600ms 6;
   z-index:2;
+  &.started {
+    animation: move_hand 300ms linear 600ms 6;
+  }
 }
-#second_person.male img{
-  transform: scaleX(-1);
-}
+
 #ball_wrapper {
   width:602px;
   height:439px;
@@ -118,21 +213,28 @@ body {
   position: absolute;
   right: 115px;
   bottom: 90px;
-  animation: move_second_person_ball 7000ms ease-in 3000ms 1;
+  &.started {
+    animation: move_second_person_ball 7000ms ease-in 3000ms 1;
+  }
 }
 #first_person_ball {
   background-color:#42BFBF;
   position: absolute;
   left: 22px;
   bottom: 103px;
-  animation: move_first_person_ball 7000ms ease-in 3000ms 1;
+  &.started {
+    animation: move_first_person_ball 7000ms ease-in 3000ms 1;
+  }
+
 }
 #valentine_ball {
   background-color:#FF02A0;
   position:absolute;
   top: 165px;
   right: 255px;
-  animation: move_valentine_ball 8000ms ease-in 10000ms 1;
+  &.started {
+    animation: move_valentine_ball 8000ms ease-in 10000ms 1;
+  }
 }
 #full_system {
   width:602px;
@@ -145,7 +247,9 @@ body {
   position: relative;
   top: 146px;
   left: 312px;
-  animation: flask_shake 8000ms ease-in 10000ms 1;
+  &.started {
+    animation: flask_shake 8000ms ease-in 10000ms 1;
+  }
 }
 #full_system div.clamp{
   position:absolute;
@@ -157,12 +261,17 @@ body {
 #full_system div.clamp:nth-child(2){
   top:200px;
   right:39px;
-  animation: clamp_first 7000ms ease-in 3000ms 1;
+  &.started {
+    animation: clamp_first 7000ms ease-in 3000ms 1;
+  }
 }
 #full_system div.clamp:last-child{
   top: 200px;
   right: 81px;
-  animation: clamp_last 7000ms ease-in 3000ms 1;
+  &.started {
+    animation: clamp_last 7000ms ease-in 3000ms 1;
+  }
+
 }
 img#thermometer{
   position:absolute;
@@ -173,7 +282,9 @@ div#fire_stand{
   position:absolute;
   bottom:0;
   left:199px;
-  animation: fire_move 8000ms ease-in 1;
+  &.started {
+    animation: fire_move 8000ms ease-in 1;
+  }
 }
 div#fire_stand img:first-child{
   position:absolute;
@@ -183,16 +294,23 @@ img#fire{
   position:absolute;
   bottom:56px;
   left:-2px;
-  animation: fire 1000ms ease-in infinite;
+  &.started {
+    animation: fire 1000ms ease-in infinite;
+  }
+
 }
 #final{
   position:absolute;
   top: 245px;
   right: 205px;
-  transform: scale(0.1);
-  transform: scale(0.1);
-  animation: final 7000ms ease-in 17000ms 1;
+  opacity: 0;
+  &.started {
+    opacity: 1;
+    transform: scale(0.1);
+    animation: final 7000ms ease-in 17000ms 1;
+  }
 }
+
 
 /*-----Animations-----*/
 /*-----Move girl ball-----*/
@@ -689,17 +807,14 @@ img#fire{
     top:245px;
     right:205px;
     transform: scale(0.1);
-    transform: scale(0.1);
   }
   50% {
     top:195px;
     right:195px;
     transform: scale(1);
-    transform: scale(1);
   }
   100%{
     top:-100px;
     right:0;
-    transform: scale(1);
     transform: scale(1);}
 }

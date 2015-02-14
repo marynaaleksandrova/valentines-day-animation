@@ -3,45 +3,94 @@ html(lang='en')
   head
     meta(charset='utf-8')
     title Create your Valentine's card
-    style(type='text/css').
-      form {
-        text-align: center;
-      }
-      form fieldset.person {
-        display: inline-block;
-        width: 40%;
-      }
-      button {
-        display: block;
-      }
+    meta(content='width=device-width, initial-scale=1.0, user-scalable=no',name='viewport')
+    meta(content='Hashobject (team@hashobject.com)',name='author')
+    meta(name="keywords", content="valentines card, valentine's card, vcard, animation, css3, html5, card")
+    link(rel="stylesheet", href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css")
+    link(rel="stylesheet", href="create.css")
+
   body
-    form(method='GET', action='index.html')
+    h1 Create your Valentine's card
+    form(method='GET', action='index.html').pure-form
       fieldset.person
-        legend
-          | You
-        p
-          label Sex:
-          input#firstSex(type='radio', name='fpSex', value='female', checked='checked')
-          input#firstSex(type='radio', name='fpSex', value='male')
-        p
-          label Hair color:
-          input#firstHair(type='radio', name='fpHair', value='black', checked='checked')
-          input#firstHair(type='radio', name='fpHair', value='red')
-          input#firstHair(type='radio', name='fpHair', value='white')
+        h2 You
+        fieldset.group-control
+          legend Sex
+          label(for='firstSexFemale').sex-radio-control
+            input#firstSexFemale(type='radio', name='fpSex', value='female', checked='checked')
+            | Female
+          label(for='secondSexMale').sex-radio-control
+            input#secondSexMale(type='radio', name='fpSex', value='male')
+            | Male
+        fieldset.group-control
+          legend Hair color
+          label.radio-color
+            input#firstHairBlack(type='radio', name='fpHair', value='000000', checked='checked')
+            span.black
+          label.radio-color
+            input#firstHairDark(type='radio', name='fpHair', value='4C3216')
+            span.dark
+          label.radio-color
+            input#firstHairRed(type='radio', name='fpHair', value='BF4D00')
+            span.red
+          label.radio-color
+            input#firstHairWhite(type='radio', name='fpHair', value='FFDBA1')
+            span.white
+        fieldset.group-control
+          legend Skin color
+          label.radio-color
+            input(type='radio', name='fpSkin', value='FFB685', checked='checked')
+            span.red-skin
+          label.radio-color
+            input(type='radio', name='fpSkin', value='FFD488')
+            span.light-skin
+          label.radio-color
+            input(type='radio', name='fpSkin', value='C68D26')
+            span.yellow-skin
+          label.radio-color
+            input(type='radio', name='fpSkin', value='754C24')
+            span.dark-skin
+
       fieldset.person
-        legend
-          | Your partner
-        p
-          label Sex:
-          input#secondSex(type='radio', name='spSex', value='female', checked='checked')
-          input#secondSex(type='radio', name='spSex', value='male')
-        p
-          label Hair color:
-          input#secondHair(type='radio', name='spHair', value='black', checked='checked')
-          input#secondHair(type='radio', name='spHair', value='red')
-          input#secondHair(type='radio', name='spHair', value='white')
-      //- fieldset
-      //-   p
-      //-     label Color:
-      //-     input(type='color',name='bgColor')
-      button Create
+        h2 Your partner
+        fieldset.group-control
+          legend Sex
+          label.sex-radio-control(for='secondSexFemale')
+            input#secondSexFemale(type='radio', name='spSex', value='female', checked='checked')
+            | Female
+          label.sex-radio-control(for='secondSexMale')
+            input#secondSexMale(type='radio', name='spSex', value='male')
+            | Male
+        fieldset.group-control
+          legend Hair color
+          label.radio-color
+            input#secondHairBlack(type='radio', name='spHair', value='000000', checked='checked')
+            span.black
+          label.radio-color
+            input#secondHairDark(type='radio', name='spHair', value='4C3216')
+            span.dark
+          label.radio-color
+            input#secondHairRed(type='radio', name='spHair', value='BF4D00')
+            span.red
+          label.radio-color
+            input#secondHairWhite(type='radio', name='spHair', value='FFDBA1')
+            span.white
+        fieldset.group-control
+          legend Skin color
+          label.radio-color
+            input(type='radio', name='spSkin', value='FFB685', checked='checked')
+            span.red-skin
+          label.radio-color
+            input(type='radio', name='spSkin', value='FFD488')
+            span.light-skin
+          label.radio-color
+            input(type='radio', name='spSkin', value='C68D26')
+            span.yellow-skin
+          label.radio-color
+            input(type='radio', name='spSkin', value='754C24')
+            span.dark-skin
+      div.pure-controls
+        button.pure-button.pure-button-primary.button-xlarge Create
+
+      div.pure-controls.footer
+       | Made by <a href="http://hashobject.com">Hashobject</a> team

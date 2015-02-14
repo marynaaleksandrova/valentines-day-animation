@@ -1,3 +1,88 @@
+#wrapper {
+  display: none;
+}
+html.loading .loaded_controls {
+  display: none;
+}
+html.loaded #wrapper {
+  display: block;
+}
+html.loaded .loading_controls {
+  display: none;
+}
+.loading_controls {
+  position: fixed;
+  width: 500px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -250px;
+  text-align: center;
+  font-family: 'Helvetica Neue', Helvetica, 'Calibri', sans-serif;
+  font-size: 25px;
+  color: #ffaaf4;
+  font-weight: 100;
+}
+#start-animation {
+  font-size: 1em;
+  display: block;
+  margin: 0 auto;
+  background-color: #ff00df;
+  color: #fff;
+  padding: 0.4em 0.8em 0.3em;
+  text-decoration: none;
+  font-family: Helvetica, Colibri, sans-serif;
+  font-weight: 200;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #8e027c;
+  -webkit-transition: background-color 300ms;
+  -moz-transition: background-color 300ms;
+  -o-transition: background-color 300ms;
+  -ms-transition: background-color 300ms;
+  transition: background-color 300ms;
+}
+#start-animation:hover {
+  background-color: #e200c6;
+  cursor: pointer;
+}
+.loading_controls span {
+  font-size: 12px;
+}
+#btns {
+  position: fixed;
+  top: 7px;
+  left: 10px;
+}
+.btn {
+  background-color: #ff00df;
+  color: #fff;
+  padding: 0.3em 0.8em;
+  text-decoration: none;
+  font-family: Helvetica, Colibri, sans-serif;
+  font-weight: 200;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #8e027c;
+  -webkit-transition: background-color 300ms;
+  -moz-transition: background-color 300ms;
+  -o-transition: background-color 300ms;
+  -ms-transition: background-color 300ms;
+  transition: background-color 300ms;
+  margin: 0 0.5em;
+}
+.btn:hover {
+  background-color: #e200c6;
+  cursor: pointer;
+}
+#social {
+  position: fixed;
+  top: 7px;
+  right: 10px;
+}
+#svgs svg {
+  display: none;
+}
 body {
   height: 100%;
   background: #940268; /* Old browsers */
@@ -57,6 +142,8 @@ body {
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
+}
+#first_person.started {
   -webkit-animation: move_first_person 3000ms linear 1;
   -moz-animation: move_first_person 3000ms linear 1;
   -o-animation: move_first_person 3000ms linear 1;
@@ -72,6 +159,8 @@ body {
   position: absolute;
   bottom: 0;
   left: 16px;
+}
+#first_person_leg1.started {
   -webkit-animation: move_leg1 300ms linear 600ms 4;
   -moz-animation: move_leg1 300ms linear 600ms 4;
   -o-animation: move_leg1 300ms linear 600ms 4;
@@ -82,6 +171,8 @@ body {
   position: absolute;
   bottom: 0;
   left: 16px;
+}
+#first_person_leg2.started {
   -webkit-animation: move_leg2 300ms linear 600ms 4;
   -moz-animation: move_leg2 300ms linear 600ms 4;
   -o-animation: move_leg2 300ms linear 600ms 4;
@@ -92,19 +183,14 @@ body {
   position: absolute;
   top: 35px;
   left: 14px;
+  z-index: 2;
+}
+#first_person_hand.started {
   -webkit-animation: move_hand 300ms linear 600ms 4;
   -moz-animation: move_hand 300ms linear 600ms 4;
   -o-animation: move_hand 300ms linear 600ms 4;
   -ms-animation: move_hand 300ms linear 600ms 4;
   animation: move_hand 300ms linear 600ms 4;
-  z-index: 2;
-}
-#first_person.female img {
-  -webkit-transform: scaleX(-1);
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -ms-transform: scaleX(-1);
-  transform: scaleX(-1);
 }
 #second_person {
   position: absolute;
@@ -115,6 +201,8 @@ body {
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
+}
+#second_person.started {
   -webkit-animation: move_second_person 3000ms linear 1;
   -moz-animation: move_second_person 3000ms linear 1;
   -o-animation: move_second_person 3000ms linear 1;
@@ -130,6 +218,8 @@ body {
   position: absolute;
   bottom: 0;
   right: 16px;
+}
+#second_person_leg1.started {
   -webkit-animation: move_leg1 300ms linear 600ms 6;
   -moz-animation: move_leg1 300ms linear 600ms 6;
   -o-animation: move_leg1 300ms linear 600ms 6;
@@ -140,6 +230,8 @@ body {
   position: absolute;
   bottom: 0;
   right: 16px;
+}
+#second_person_leg2.started {
   -webkit-animation: move_leg2 300ms linear 600ms 6;
   -moz-animation: move_leg2 300ms linear 600ms 6;
   -o-animation: move_leg2 300ms linear 600ms 6;
@@ -150,19 +242,14 @@ body {
   position: absolute;
   top: 35px;
   right: 14px;
+  z-index: 2;
+}
+#second_person_hand.started {
   -webkit-animation: move_hand 300ms linear 600ms 6;
   -moz-animation: move_hand 300ms linear 600ms 6;
   -o-animation: move_hand 300ms linear 600ms 6;
   -ms-animation: move_hand 300ms linear 600ms 6;
   animation: move_hand 300ms linear 600ms 6;
-  z-index: 2;
-}
-#second_person.male img {
-  -webkit-transform: scaleX(-1);
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -ms-transform: scaleX(-1);
-  transform: scaleX(-1);
 }
 #ball_wrapper {
   width: 602px;
@@ -185,6 +272,8 @@ body {
   position: absolute;
   right: 115px;
   bottom: 90px;
+}
+#second_person_ball.started {
   -webkit-animation: move_second_person_ball 7000ms ease-in 3000ms 1;
   -moz-animation: move_second_person_ball 7000ms ease-in 3000ms 1;
   -o-animation: move_second_person_ball 7000ms ease-in 3000ms 1;
@@ -196,6 +285,8 @@ body {
   position: absolute;
   left: 22px;
   bottom: 103px;
+}
+#first_person_ball.started {
   -webkit-animation: move_first_person_ball 7000ms ease-in 3000ms 1;
   -moz-animation: move_first_person_ball 7000ms ease-in 3000ms 1;
   -o-animation: move_first_person_ball 7000ms ease-in 3000ms 1;
@@ -207,6 +298,8 @@ body {
   position: absolute;
   top: 165px;
   right: 255px;
+}
+#valentine_ball.started {
   -webkit-animation: move_valentine_ball 8000ms ease-in 10000ms 1;
   -moz-animation: move_valentine_ball 8000ms ease-in 10000ms 1;
   -o-animation: move_valentine_ball 8000ms ease-in 10000ms 1;
@@ -224,6 +317,8 @@ body {
   position: relative;
   top: 146px;
   left: 312px;
+}
+#full_system img#flask.started {
   -webkit-animation: flask_shake 8000ms ease-in 10000ms 1;
   -moz-animation: flask_shake 8000ms ease-in 10000ms 1;
   -o-animation: flask_shake 8000ms ease-in 10000ms 1;
@@ -240,6 +335,8 @@ body {
 #full_system div.clamp:nth-child(2) {
   top: 200px;
   right: 39px;
+}
+#full_system div.clamp:nth-child(2).started {
   -webkit-animation: clamp_first 7000ms ease-in 3000ms 1;
   -moz-animation: clamp_first 7000ms ease-in 3000ms 1;
   -o-animation: clamp_first 7000ms ease-in 3000ms 1;
@@ -249,6 +346,8 @@ body {
 #full_system div.clamp:last-child {
   top: 200px;
   right: 81px;
+}
+#full_system div.clamp:last-child.started {
   -webkit-animation: clamp_last 7000ms ease-in 3000ms 1;
   -moz-animation: clamp_last 7000ms ease-in 3000ms 1;
   -o-animation: clamp_last 7000ms ease-in 3000ms 1;
@@ -264,6 +363,8 @@ div#fire_stand {
   position: absolute;
   bottom: 0;
   left: 199px;
+}
+div#fire_stand.started {
   -webkit-animation: fire_move 8000ms ease-in 1;
   -moz-animation: fire_move 8000ms ease-in 1;
   -o-animation: fire_move 8000ms ease-in 1;
@@ -278,6 +379,8 @@ img#fire {
   position: absolute;
   bottom: 56px;
   left: -2px;
+}
+img#fire.started {
   -webkit-animation: fire 1000ms ease-in infinite;
   -moz-animation: fire 1000ms ease-in infinite;
   -o-animation: fire 1000ms ease-in infinite;
@@ -288,11 +391,14 @@ img#fire {
   position: absolute;
   top: 245px;
   right: 205px;
-  -webkit-transform: scale(0.1);
-  -moz-transform: scale(0.1);
-  -o-transform: scale(0.1);
-  -ms-transform: scale(0.1);
-  transform: scale(0.1);
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+#final.started {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
   -webkit-transform: scale(0.1);
   -moz-transform: scale(0.1);
   -o-transform: scale(0.1);
@@ -5076,11 +5182,6 @@ img#fire {
     -o-transform: scale(0.1);
     -ms-transform: scale(0.1);
     transform: scale(0.1);
-    -webkit-transform: scale(0.1);
-    -moz-transform: scale(0.1);
-    -o-transform: scale(0.1);
-    -ms-transform: scale(0.1);
-    transform: scale(0.1);
   }
   50% {
     top: 195px;
@@ -5090,20 +5191,10 @@ img#fire {
     -o-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
   }
   100% {
     top: -100px;
     right: 0;
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -o-transform: scale(1);
@@ -5120,11 +5211,6 @@ img#fire {
     -o-transform: scale(0.1);
     -ms-transform: scale(0.1);
     transform: scale(0.1);
-    -webkit-transform: scale(0.1);
-    -moz-transform: scale(0.1);
-    -o-transform: scale(0.1);
-    -ms-transform: scale(0.1);
-    transform: scale(0.1);
   }
   50% {
     top: 195px;
@@ -5134,20 +5220,10 @@ img#fire {
     -o-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
   }
   100% {
     top: -100px;
     right: 0;
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -o-transform: scale(1);
@@ -5164,11 +5240,6 @@ img#fire {
     -o-transform: scale(0.1);
     -ms-transform: scale(0.1);
     transform: scale(0.1);
-    -webkit-transform: scale(0.1);
-    -moz-transform: scale(0.1);
-    -o-transform: scale(0.1);
-    -ms-transform: scale(0.1);
-    transform: scale(0.1);
   }
   50% {
     top: 195px;
@@ -5178,20 +5249,10 @@ img#fire {
     -o-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
   }
   100% {
     top: -100px;
     right: 0;
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -o-transform: scale(1);
@@ -5208,11 +5269,6 @@ img#fire {
     -o-transform: scale(0.1);
     -ms-transform: scale(0.1);
     transform: scale(0.1);
-    -webkit-transform: scale(0.1);
-    -moz-transform: scale(0.1);
-    -o-transform: scale(0.1);
-    -ms-transform: scale(0.1);
-    transform: scale(0.1);
   }
   50% {
     top: 195px;
@@ -5222,20 +5278,10 @@ img#fire {
     -o-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
   }
   100% {
     top: -100px;
     right: 0;
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -o-transform: scale(1);
